@@ -156,3 +156,22 @@ footer {
 .cover-01 {
     background-image: url("images/sayi-01.png");
 }
+
+@media (max-width: 768px) {
+    nav {
+        height: 80px;        /* 96px → 80px */
+        padding: 0 1.5rem;  /* yan boşluk da biraz kıs */
+    }
+
+    .logo img {
+        max-height: 52px;   /* logo da orantılı küçülsün */
+    }
+
+    #themeToggle {
+        font-size: 1.3rem;  /* çok az küçült */
+    }
+
+    main {
+        margin-top: 80px;   /* nav height ile eşle */
+    }
+}

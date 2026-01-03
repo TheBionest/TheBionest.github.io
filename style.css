@@ -30,16 +30,13 @@ body {
 }
 
 nav {
-    background: var(--nav-bg);
-    padding: 1.2rem 3rem;
+    height: 96px;              
+    padding: 0 3rem;           
     display: flex;
-    justify-content: space-between; /* sol logo – sağ buton */
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 10px var(--shadow);
-    position: sticky;
-    top: 0;
-    z-index: 10;
 }
+
 
 .logo {
     display: flex;
@@ -48,7 +45,8 @@ nav {
 
 
 .logo img {
-    height: 64px;
+    max-height: 64px;
+    height: auto;
     width: auto;
     display: block;
 }
@@ -72,8 +70,10 @@ nav a:hover {
 #themeToggle {
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     cursor: pointer;
+    line-height: 1;       
+    padding: 0;            
 }
 
 main {
@@ -86,7 +86,6 @@ h1 {
     margin-bottom: 2rem;
 }
 
-/* DASHBOARD */
 .dashboard {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -122,7 +121,6 @@ h1 {
     margin-bottom: 0.4rem;
 }
 
-/* CONTACT */
 .contact {
     margin-top: 5rem;
     background: var(--card-bg);
@@ -136,7 +134,6 @@ h1 {
     line-height: 1.6;
 }
 
-/* FOOTER */
 footer {
     text-align: center;
     padding: 2rem;
@@ -147,3 +144,4 @@ footer {
 .cover-01 {
     background-image: url("images/sayi-01.png");
 }
+
